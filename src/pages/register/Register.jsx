@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import './register.css'
 import { useState } from "react";
 import axios from "axios";
+import { Redirect } from "react-router-dom";
 import { axiosInstance } from '../../Config';
 export default function Register() {
     
@@ -17,7 +18,8 @@ export default function Register() {
             username,
             password,
           });
-          res.data && window.location.replace("/login");
+          // res.data && window.location.replace("/login");
+            res.data && <Redirect to= "/login"/>
         } catch (err) {
           setError(true);
         }
