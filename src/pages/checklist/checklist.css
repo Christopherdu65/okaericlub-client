@@ -1,0 +1,35 @@
+.checklist{
+    justify-content: center;
+    align-items: center;
+}
+.checklistTitle{
+    text-align: center;
+    margin: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ff6262;
+    font-size: 30px;
+}
+/* .checklist_Item{
+    font-family: 'Josefin Sans', sans-serif;
+} */
+.itemText{
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'lora', sans-serif;
+    text-align: center;
+}
+.item_name{
+    margin-right: 5%;
+    font-size: 18px;
+    font-weight: 1000;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 20px;
+}
+.checklist_Item{
+    list-style: none;
+}
+.check-link{
+    text-decoration: none;
+    color: #ff6262;
+}
