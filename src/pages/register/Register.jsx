@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import './register.css'
 import { useState } from "react";
 import axios from "axios";
-// import { axiosInstance } from '../../Config';
+import { axiosInstance } from '../../Config';
 export default function Register() {
     
     const [username, setUsername] = useState("");
@@ -12,8 +12,8 @@ export default function Register() {
         e.preventDefault();
         setError(false);
         try {
-          // const res = await axiosInstance.post("/auth/register", {
-            const res = await axios.post("https://okaeri-club.herokuapp.com/api/auth/register", {
+          const res = await axiosInstance.post("/auth/register", {
+            // const res = await axios.post("https://okaeri-club.herokuapp.com/api/auth/register", {
             username,
             password,
           });
