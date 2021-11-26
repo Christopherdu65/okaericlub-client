@@ -21,7 +21,6 @@ function Leaderboard() {
    useEffect(()=>{
        const fetchUsers = async()=>{
            const res = await axiosInstance.get("/users/");
-           console.log(res.data);
            setUsers(res.data);
        }
        fetchUsers();

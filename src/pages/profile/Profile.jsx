@@ -9,8 +9,12 @@ export default function Profile() {
     const [curr, setCurr] = useState();
     useEffect(()=>{
         const currUser = async()=>{
-            const res = await axiosInstance.get(`/users/${user._id}`);       
-            setCurr(res.data);
+            try{
+                const res = await axiosInstance.get(`/users/${user._id}`);       
+                setCurr(res.data);
+            }catch(err){
+                console.log(err);
+            }
         }
         currUser();
     },)
@@ -22,8 +26,8 @@ export default function Profile() {
                 alt="Too bad you can't see me"
                 />
             <div className="hr3"></div>
-            <p className="prof-text">Username: {curr && curr.username}</p>
-            <p className="prof-text">Total Score: {curr && curr.totalScore}</p>
+            <p className="prof-text">Username: {curr.username}</p>
+            <p className="prof-text">Total Score: {curr.totalScore}</p>
         </div>
     )
 }

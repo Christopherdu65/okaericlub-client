@@ -19,7 +19,7 @@ export default function Register() {
             password,
           });
           // res.data && window.location.replace("/login");
-            res.data && <Redirect to= "/login"/>
+            res.data? <Redirect to= "/login"/>: setError(true)
         } catch (err) {
           setError(true);
         }
