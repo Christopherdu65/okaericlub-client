@@ -13,13 +13,12 @@ export default function Register() {
         setError(false);
         try {
             const res = await axiosInstance.post("/auth/register", {
+            // await axiosInstance.post("/auth/register", {
                 // const res = await axios.post("https://okaeri-club.herokuapp.com/api/auth/register", {
                 username,
                 password,
-            }).then(window.location.replace("/login"));
-            console.log(res.data);
-            setIsreg(true);
-            res.data && window.location.replace("/login");
+            }).then(res.data && setIsreg(true) && window.location.replace("/login"));
+            // res.data && window.location.replace("/login");
 
         } catch (err) {
             setError(true);

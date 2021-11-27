@@ -26,8 +26,8 @@ export default function Profile() {
                 alt="Too bad you can't see me"
                 />
             <div className="hr3"></div>
-            <p className="prof-text">Username: {curr.username}</p>
-            <p className="prof-text">Total Score: {curr.totalScore}</p>
+            <p className="prof-text">Username: {curr && curr.username}</p>
+            <p className="prof-text">Total Score: {curr && curr.totalScore}</p>
         </div>
     )
 }
