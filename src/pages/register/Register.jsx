@@ -17,8 +17,11 @@ export default function Register() {
                 // const res = await axios.post("https://okaeri-club.herokuapp.com/api/auth/register", {
                 username,
                 password,
-            }).then(res.data && setIsreg(true) && window.location.replace("/login"));
-            // res.data && window.location.replace("/login");
+            });
+                // .then(res.data && setIsreg(true) && window.location.replace("/login"));
+                if(res.status === 200 || res.status === 204) {
+                    window.location.replace("/login");
+                }
 
         } catch (err) {
             setError(true);

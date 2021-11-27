@@ -22,7 +22,7 @@ export default function About() {
             <p className="itemText">
                 We use <span className="tech-title">React.js</span> to build the frontend for the website and consume our backend. 
             </p>
-            <p className="itemText">The website is deployed and hosted on Heroku</p>
+            <p className="itemText">The server is deployed on Heroku while the client is deployed on Netlify</p>
             <li className="item_name">What we learned</li>
             <p className="itemText">It was my first time doing any php&mysql and jquery, so it was nice to get a start on that. I feel like this class made me better at learning things in general, organizing myself and actually doing things. 
             </p>
