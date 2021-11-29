@@ -10,7 +10,7 @@ export default function About() {
             <p className="itemText">I am building this webstie as my final project for my web programing class.</p>
             <p className="itemText">I like anime obviously, but I am also into baseball and I can sing a thing or two in French(maybe I should have added my soundcloud here).</p>
             <li className="item_name">What and Why</li>
-            <p className="itemText">My website is an anime trivia. Each quiz consists of ten questions chosen randomly from a trivia api. After each party, the user can go on the leaderboard to see how they fare against the competiiton
+            <p className="itemText">My website is an anime trivia. Each quiz consists of ten questions chosen randomly from a trivia api. After each quiz, the user can go on the leaderboard to see how they fare against the competiiton
             </p>
             <p className="itemText">I chose this because I believed it was a project that was going to make me learn new things without too much complexity. 
             I also believe it is fun enough and it can provide a great experience to anyone.
